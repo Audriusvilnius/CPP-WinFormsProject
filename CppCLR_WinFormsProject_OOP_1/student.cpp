@@ -146,4 +146,8 @@ bool maziau(const student& x, const student& y)
 {
 	return x.get_gradeMean() < y.get_gradeMean();
 }
-bool lygu5(student& x) { return x.get_gradeMean() >= 5; };
+bool surname(const student& x, const student& y)
+{
+	return x.get_name() < y.get_name();
+}
+bool lygu5(student& x) { return x.get_gradeMean() >= separ; };

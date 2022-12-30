@@ -49,5 +49,6 @@ void prtint_Up();
 void prtint_Less();
 float checknd(float nd);
 float checkex(float ex);
+bool surname(const student& x, const student& y);
 bool maziau(const student& x, const student& y);
 bool lygu5(student& x);
