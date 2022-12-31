@@ -1,4 +1,4 @@
-pavarde vardas	nd1	nd2	nd3	exam
+pavarde vardas	nd1	nd2	nd3	nd4	nd5	exam
 Eardas1	baer5	10	3	5	7	7	9	
 Hardas1	Pavarde1	5	3	5	7	4	7
 Aardas1	kade2	4	3	5	7	6	7

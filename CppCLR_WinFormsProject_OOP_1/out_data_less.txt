@@ -1,0 +1,5 @@
+Vardas	Pavarde	Vidurkis < 7
+Cardas1	rader3	4.73	4.80
+ZVardas1	bader6	5.93	5.80
+Hardas1	Pavarde1	6.27	6.20
+Aardas1	kade2	6.33	6.40

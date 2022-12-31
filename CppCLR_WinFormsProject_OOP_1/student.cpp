@@ -50,10 +50,10 @@ ostream& operator<<(ostream& output, const student& set_data) {
 
 
 	if (option == 3) {
-		output << fixed << setprecision(2) << "\t" << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMean << endl;
+		output << fixed << setprecision(2) << "\t" << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMean << "\n";
 	}
 	if (option == 4) {
-		output << fixed << setprecision(2) << "\t" << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMedian << endl;
+		output << fixed << setprecision(2) << "\t" << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMedian << "\n";
 	}
 	if (option == 5)
 	{
@@ -131,13 +131,15 @@ void student::setDataMedian() {
 	}
 };
 
-float student::setDataGradeMean() {
+float student::setDataGradeMean() 
+{
 	setDataMean();
 	gradeMean = ((mean * 0.4) + (exam * 0.6));
 	return gradeMean;
 };
 
-float student::setDataGradeMedian() {
+float student::setDataGradeMedian() 
+{
 	setDataMedian();
 	gradeMedian = ((median * 0.4) + (exam * 0.6));
 	return gradeMedian;
@@ -150,4 +152,7 @@ bool surname(const student& x, const student& y)
 {
 	return x.get_name() < y.get_name();
 }
-bool lygu5(student& x) { return x.get_gradeMean() >= separ; };
+bool lygu5(student& x) 
+{
+	return x.get_gradeMean() >= separ; 
+}
