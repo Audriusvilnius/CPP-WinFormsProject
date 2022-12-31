@@ -50,15 +50,15 @@ ostream& operator<<(ostream& output, const student& set_data) {
 
 
 	if (option == 3) {
-		output << fixed << setprecision(2) << "\t" << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMean << "\n";
+		output << fixed << setprecision(2) << set_data.id_name << setw(25) <<set_data.id_surname << setw(25) << set_data.gradeMean << "\n";
 	}
 	if (option == 4) {
-		output << fixed << setprecision(2) << "\t" << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMedian << "\n";
+		output << fixed << setprecision(2) << setw(5) << set_data.id_name << setw(25) << set_data.id_surname << setw(25) << set_data.gradeMedian << "\n";
 	}
 	if (option == 5)
 	{
 		//output << fixed << setprecision(2) << setw(15) << left << set_data.id_name << setw(15) << set_data.id_surname << setw(15) << "" << set_data.gradeMean << setw(15) << "" << set_data.gradeMedian << endl;
-		output << fixed << setprecision(2) << set_data.id_name << "\t" << set_data.id_surname << "\t" << set_data.gradeMean << "\t" << set_data.gradeMedian << "\n";
+		output << fixed << setprecision(2) << setw(5)<< set_data.id_name << setw(25) << set_data.id_surname << setw(25) << set_data.gradeMean << setw(25) << set_data.gradeMedian << "\n";
 	}
 	if (option == 7)
 	{
