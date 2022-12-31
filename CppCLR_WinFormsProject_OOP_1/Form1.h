@@ -139,12 +139,12 @@ namespace CppCLRWinFormsProject {
 			this->saveAsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->editToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->saveEditToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->closeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->viewToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->avrgValueToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->aboutToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->vievToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
@@ -181,7 +181,6 @@ namespace CppCLRWinFormsProject {
 			// button2
 			// 
 			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->button2->Enabled = false;
 			this->button2->Location = System::Drawing::Point(662, 327);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 26);
@@ -314,16 +313,18 @@ namespace CppCLRWinFormsProject {
 			// 
 			// label1
 			// 
-			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->label1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->label1->BackColor = System::Drawing::SystemColors::Control;
+			this->label1->BorderStyle = System::Windows::Forms::BorderStyle::FixedSingle;
 			this->label1->Enabled = false;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Tai Le", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(513, 507);
+			this->label1->Location = System::Drawing::Point(12, 423);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(26, 26);
+			this->label1->Size = System::Drawing::Size(640, 26);
 			this->label1->TabIndex = 13;
-			this->label1->Text = L"<";
+			this->label1->Text = L"Please select data value calculltion format";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			// 
 			// button12
@@ -360,10 +361,10 @@ namespace CppCLRWinFormsProject {
 				static_cast<System::Byte>(0)));
 			this->radioButton1->Location = System::Drawing::Point(18, 20);
 			this->radioButton1->Name = L"radioButton1";
-			this->radioButton1->Size = System::Drawing::Size(165, 17);
+			this->radioButton1->Size = System::Drawing::Size(172, 17);
 			this->radioButton1->TabIndex = 16;
 			this->radioButton1->TabStop = true;
-			this->radioButton1->Text = L"Date base by avrerage  value";
+			this->radioButton1->Text = L"Date based on avrerage  value";
 			this->radioButton1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->radioButton1->UseVisualStyleBackColor = true;
 			this->radioButton1->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton1_CheckedChanged);
@@ -375,12 +376,12 @@ namespace CppCLRWinFormsProject {
 			this->radioButton2->AutoSize = true;
 			this->radioButton2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton2->Location = System::Drawing::Point(189, 20);
+			this->radioButton2->Location = System::Drawing::Point(215, 20);
 			this->radioButton2->Name = L"radioButton2";
-			this->radioButton2->Size = System::Drawing::Size(157, 17);
+			this->radioButton2->Size = System::Drawing::Size(167, 17);
 			this->radioButton2->TabIndex = 17;
 			this->radioButton2->TabStop = true;
-			this->radioButton2->Text = L"Date base by median  value";
+			this->radioButton2->Text = L"Date based on  median  value";
 			this->radioButton2->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->radioButton2->UseVisualStyleBackColor = true;
 			this->radioButton2->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton2_CheckedChanged);
@@ -392,12 +393,12 @@ namespace CppCLRWinFormsProject {
 			this->radioButton3->AutoSize = true;
 			this->radioButton3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton3->Location = System::Drawing::Point(352, 20);
+			this->radioButton3->Location = System::Drawing::Point(404, 20);
 			this->radioButton3->Name = L"radioButton3";
-			this->radioButton3->Size = System::Drawing::Size(223, 17);
+			this->radioButton3->Size = System::Drawing::Size(230, 17);
 			this->radioButton3->TabIndex = 18;
 			this->radioButton3->TabStop = true;
-			this->radioButton3->Text = L"Date base by avrerage and median  value";
+			this->radioButton3->Text = L"Date based on avrerage and median  value";
 			this->radioButton3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
 			this->radioButton3->UseVisualStyleBackColor = true;
 			this->radioButton3->CheckedChanged += gcnew System::EventHandler(this, &Form1::radioButton3_CheckedChanged);
@@ -415,7 +416,7 @@ namespace CppCLRWinFormsProject {
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->groupBox1->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->groupBox1->Location = System::Drawing::Point(12, 425);
+			this->groupBox1->Location = System::Drawing::Point(12, 452);
 			this->groupBox1->Name = L"groupBox1";
 			this->groupBox1->Size = System::Drawing::Size(640, 50);
 			this->groupBox1->TabIndex = 19;
@@ -449,42 +450,47 @@ namespace CppCLRWinFormsProject {
 			// openFileToolStripMenuItem
 			// 
 			this->openFileToolStripMenuItem->Name = L"openFileToolStripMenuItem";
-			this->openFileToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->openFileToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			this->openFileToolStripMenuItem->Text = L"Open file";
 			this->openFileToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
 			// 
 			// saveToolStripMenuItem
 			// 
 			this->saveToolStripMenuItem->Name = L"saveToolStripMenuItem";
-			this->saveToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->saveToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			this->saveToolStripMenuItem->Text = L"Save";
 			this->saveToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button3_Click);
 			// 
 			// saveAsToolStripMenuItem
 			// 
 			this->saveAsToolStripMenuItem->Name = L"saveAsToolStripMenuItem";
-			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->saveAsToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			this->saveAsToolStripMenuItem->Text = L"Save as";
 			this->saveAsToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button4_Click);
 			// 
 			// editToolStripMenuItem
 			// 
 			this->editToolStripMenuItem->Name = L"editToolStripMenuItem";
-			this->editToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->editToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			this->editToolStripMenuItem->Text = L"Edit";
 			this->editToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button8_Click);
 			// 
 			// saveEditToolStripMenuItem
 			// 
 			this->saveEditToolStripMenuItem->Name = L"saveEditToolStripMenuItem";
-			this->saveEditToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->saveEditToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			this->saveEditToolStripMenuItem->Text = L"Save Edit";
 			this->saveEditToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button9_Click);
+			// 
+			// toolStripSeparator1
+			// 
+			this->toolStripSeparator1->Name = L"toolStripSeparator1";
+			this->toolStripSeparator1->Size = System::Drawing::Size(119, 6);
 			// 
 			// closeToolStripMenuItem
 			// 
 			this->closeToolStripMenuItem->Name = L"closeToolStripMenuItem";
-			this->closeToolStripMenuItem->Size = System::Drawing::Size(180, 22);
+			this->closeToolStripMenuItem->Size = System::Drawing::Size(122, 22);
 			this->closeToolStripMenuItem->Text = L"Close";
 			this->closeToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button7_Click);
 			// 
@@ -516,11 +522,6 @@ namespace CppCLRWinFormsProject {
 			this->vievToolStripMenuItem->Text = L"About";
 			this->vievToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::vievToolStripMenuItem_Click);
 			// 
-			// toolStripSeparator1
-			// 
-			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(177, 6);
-			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -545,6 +546,7 @@ namespace CppCLRWinFormsProject {
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
+			this->MinimumSize = System::Drawing::Size(761, 585);
 			this->Name = L"Form1";
 			this->Text = L"Savarankiskas darbas Nr.2";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->EndInit();
@@ -580,6 +582,7 @@ namespace CppCLRWinFormsProject {
 		button6->Enabled = true;
 		button8->Enabled = true;
 		groupBox1->Enabled = true;
+		label1->Enabled = true;
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -741,6 +744,7 @@ namespace CppCLRWinFormsProject {
 		for (int i = 0; i < 5; i++) {
 			separ = Convert::ToInt32(numericUpDown1->Text);
 			partition_copy(dataV.begin(), dataV.end(), back_inserter(V_dataUp), back_inserter(V_dataLess), lygu5);
+			sort(V_dataUp.begin(), V_dataUp.end(), maziau);
 			sort(V_dataLess.begin(), V_dataLess.end(), maziau);
 			ofstream outlessvf("temp_pr.txt");
 			outlessvf << "Name" << setw(25) << "Surname" << setw(25) << "Grade (Avrg.)" << "  /  " << "Grade (Med.) | " << "Average < " << separ << "\n";
@@ -763,6 +767,7 @@ namespace CppCLRWinFormsProject {
 			separ = Convert::ToInt32(numericUpDown1->Text);
 			partition_copy(dataV.begin(), dataV.end(), back_inserter(V_dataUp), back_inserter(V_dataLess), lygu5);
 			sort(V_dataUp.begin(), V_dataUp.end(), maziau);
+			sort(V_dataLess.begin(), V_dataLess.end(), maziau);
 			ofstream outupvf("temp_pr.txt");
 			outupvf << "Name" << setw(25) << "Surname" << setw(25) << "Grade (Avrg.)" << "  /  " << "Grade (Med.) | " << "Avrage => " << separ << "\n";
 			for (auto& a : V_dataUp) {
