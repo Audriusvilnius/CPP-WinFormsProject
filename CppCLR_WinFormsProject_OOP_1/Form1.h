@@ -106,6 +106,7 @@ namespace CppCLRWinFormsProject {
 	private: System::Windows::Forms::Button^ button15;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Button^ button16;
+	private: System::Windows::Forms::Button^ button17;
 	protected:
 
 	private:
@@ -164,6 +165,7 @@ namespace CppCLRWinFormsProject {
 			this->button15 = (gcnew System::Windows::Forms::Button());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button16 = (gcnew System::Windows::Forms::Button());
+			this->button17 = (gcnew System::Windows::Forms::Button());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
@@ -179,14 +181,14 @@ namespace CppCLRWinFormsProject {
 			this->richTextBox1->Location = System::Drawing::Point(12, 29);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->ReadOnly = true;
-			this->richTextBox1->Size = System::Drawing::Size(640, 480);
+			this->richTextBox1->Size = System::Drawing::Size(733, 299);
 			this->richTextBox1->TabIndex = 0;
 			this->richTextBox1->Text = L"";
 			// 
 			// button1
 			// 
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
-			this->button1->Location = System::Drawing::Point(12, 714);
+			this->button1->Location = System::Drawing::Point(12, 533);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(75, 26);
 			this->button1->TabIndex = 1;
@@ -201,7 +203,7 @@ namespace CppCLRWinFormsProject {
 			// button2
 			// 
 			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->button2->Location = System::Drawing::Point(658, 324);
+			this->button2->Location = System::Drawing::Point(753, 372);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 26);
 			this->button2->TabIndex = 12;
@@ -214,7 +216,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->button3->Enabled = false;
-			this->button3->Location = System::Drawing::Point(174, 714);
+			this->button3->Location = System::Drawing::Point(93, 533);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(75, 26);
 			this->button3->TabIndex = 2;
@@ -226,7 +228,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->button4->Enabled = false;
-			this->button4->Location = System::Drawing::Point(255, 714);
+			this->button4->Location = System::Drawing::Point(174, 533);
 			this->button4->Name = L"button4";
 			this->button4->Size = System::Drawing::Size(75, 26);
 			this->button4->TabIndex = 3;
@@ -238,7 +240,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button5->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button5->Enabled = false;
-			this->button5->Location = System::Drawing::Point(658, 260);
+			this->button5->Location = System::Drawing::Point(753, 308);
 			this->button5->Name = L"button5";
 			this->button5->Size = System::Drawing::Size(75, 26);
 			this->button5->TabIndex = 10;
@@ -250,7 +252,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button6->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button6->Enabled = false;
-			this->button6->Location = System::Drawing::Point(658, 292);
+			this->button6->Location = System::Drawing::Point(753, 340);
 			this->button6->Name = L"button6";
 			this->button6->Size = System::Drawing::Size(75, 26);
 			this->button6->TabIndex = 11;
@@ -261,7 +263,7 @@ namespace CppCLRWinFormsProject {
 			// button7
 			// 
 			this->button7->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button7->Location = System::Drawing::Point(660, 714);
+			this->button7->Location = System::Drawing::Point(753, 533);
 			this->button7->Name = L"button7";
 			this->button7->Size = System::Drawing::Size(75, 26);
 			this->button7->TabIndex = 30;
@@ -273,7 +275,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button8->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button8->Enabled = false;
-			this->button8->Location = System::Drawing::Point(658, 29);
+			this->button8->Location = System::Drawing::Point(751, 61);
 			this->button8->Name = L"button8";
 			this->button8->Size = System::Drawing::Size(75, 26);
 			this->button8->TabIndex = 4;
@@ -285,7 +287,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button9->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button9->Enabled = false;
-			this->button9->Location = System::Drawing::Point(658, 61);
+			this->button9->Location = System::Drawing::Point(751, 93);
 			this->button9->Name = L"button9";
 			this->button9->Size = System::Drawing::Size(75, 26);
 			this->button9->TabIndex = 5;
@@ -297,7 +299,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button10->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button10->Enabled = false;
-			this->button10->Location = System::Drawing::Point(658, 228);
+			this->button10->Location = System::Drawing::Point(753, 276);
 			this->button10->Name = L"button10";
 			this->button10->Size = System::Drawing::Size(75, 26);
 			this->button10->TabIndex = 9;
@@ -309,7 +311,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button11->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button11->Enabled = false;
-			this->button11->Location = System::Drawing::Point(658, 177);
+			this->button11->Location = System::Drawing::Point(753, 225);
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(75, 26);
 			this->button11->TabIndex = 8;
@@ -321,7 +323,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->numericUpDown1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->numericUpDown1->Enabled = false;
-			this->numericUpDown1->Location = System::Drawing::Point(658, 151);
+			this->numericUpDown1->Location = System::Drawing::Point(753, 199);
 			this->numericUpDown1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
 			this->numericUpDown1->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			this->numericUpDown1->Name = L"numericUpDown1";
@@ -340,9 +342,9 @@ namespace CppCLRWinFormsProject {
 			this->label1->Enabled = false;
 			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Tai Le", 9.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(12, 512);
+			this->label1->Location = System::Drawing::Point(12, 340);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(640, 26);
+			this->label1->Size = System::Drawing::Size(733, 26);
 			this->label1->TabIndex = 13;
 			this->label1->Text = L"Select data value calculltion format";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -351,7 +353,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button12->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button12->Enabled = false;
-			this->button12->Location = System::Drawing::Point(658, 119);
+			this->button12->Location = System::Drawing::Point(753, 167);
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(75, 26);
 			this->button12->TabIndex = 6;
@@ -399,7 +401,7 @@ namespace CppCLRWinFormsProject {
 			this->radioButton3->AutoSize = true;
 			this->radioButton3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->radioButton3->Location = System::Drawing::Point(404, 20);
+			this->radioButton3->Location = System::Drawing::Point(408, 19);
 			this->radioButton3->Name = L"radioButton3";
 			this->radioButton3->Size = System::Drawing::Size(230, 17);
 			this->radioButton3->TabIndex = 33;
@@ -422,9 +424,9 @@ namespace CppCLRWinFormsProject {
 			this->groupBox1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->groupBox1->ForeColor = System::Drawing::SystemColors::ControlText;
-			this->groupBox1->Location = System::Drawing::Point(12, 541);
+			this->groupBox1->Location = System::Drawing::Point(14, 369);
 			this->groupBox1->Name = L"groupBox1";
-			this->groupBox1->Size = System::Drawing::Size(640, 50);
+			this->groupBox1->Size = System::Drawing::Size(733, 50);
 			this->groupBox1->TabIndex = 35;
 			this->groupBox1->TabStop = false;
 			this->groupBox1->Text = L"Date value format";
@@ -437,7 +439,7 @@ namespace CppCLRWinFormsProject {
 			});
 			this->menuStrip1->Location = System::Drawing::Point(0, 0);
 			this->menuStrip1->Name = L"menuStrip1";
-			this->menuStrip1->Size = System::Drawing::Size(745, 24);
+			this->menuStrip1->Size = System::Drawing::Size(838, 24);
 			this->menuStrip1->TabIndex = 20;
 			this->menuStrip1->Text = L"menuStrip1";
 			this->menuStrip1->ItemClicked += gcnew System::Windows::Forms::ToolStripItemClickedEventHandler(this, &Form1::menuStrip1_ItemClicked);
@@ -530,7 +532,9 @@ namespace CppCLRWinFormsProject {
 			// 
 			// textBox1
 			// 
-			this->textBox1->Location = System::Drawing::Point(12, 644);
+			this->textBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->textBox1->Enabled = false;
+			this->textBox1->Location = System::Drawing::Point(12, 438);
 			this->textBox1->Name = L"textBox1";
 			this->textBox1->Size = System::Drawing::Size(134, 20);
 			this->textBox1->TabIndex = 16;
@@ -538,14 +542,18 @@ namespace CppCLRWinFormsProject {
 			// 
 			// textBox2
 			// 
-			this->textBox2->Location = System::Drawing::Point(152, 644);
+			this->textBox2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->textBox2->Enabled = false;
+			this->textBox2->Location = System::Drawing::Point(152, 438);
 			this->textBox2->Name = L"textBox2";
 			this->textBox2->Size = System::Drawing::Size(134, 20);
 			this->textBox2->TabIndex = 17;
 			// 
 			// textBox3
 			// 
-			this->textBox3->Location = System::Drawing::Point(515, 644);
+			this->textBox3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->textBox3->Enabled = false;
+			this->textBox3->Location = System::Drawing::Point(515, 438);
 			this->textBox3->Name = L"textBox3";
 			this->textBox3->Size = System::Drawing::Size(54, 20);
 			this->textBox3->TabIndex = 21;
@@ -553,8 +561,9 @@ namespace CppCLRWinFormsProject {
 			// 
 			// button13
 			// 
-			this->button13->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button13->Location = System::Drawing::Point(434, 640);
+			this->button13->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button13->Enabled = false;
+			this->button13->Location = System::Drawing::Point(434, 434);
 			this->button13->Name = L"button13";
 			this->button13->Size = System::Drawing::Size(75, 26);
 			this->button13->TabIndex = 20;
@@ -564,15 +573,18 @@ namespace CppCLRWinFormsProject {
 			// 
 			// textBox4
 			// 
-			this->textBox4->Location = System::Drawing::Point(374, 644);
+			this->textBox4->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->textBox4->Enabled = false;
+			this->textBox4->Location = System::Drawing::Point(374, 438);
 			this->textBox4->Name = L"textBox4";
 			this->textBox4->Size = System::Drawing::Size(54, 20);
 			this->textBox4->TabIndex = 19;
 			// 
 			// button14
 			// 
-			this->button14->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button14->Location = System::Drawing::Point(293, 640);
+			this->button14->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button14->Enabled = false;
+			this->button14->Location = System::Drawing::Point(293, 434);
 			this->button14->Name = L"button14";
 			this->button14->Size = System::Drawing::Size(75, 26);
 			this->button14->TabIndex = 18;
@@ -582,12 +594,12 @@ namespace CppCLRWinFormsProject {
 			// 
 			// label2
 			// 
-			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->label2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->label2->AutoSize = true;
 			this->label2->Enabled = false;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(12, 628);
+			this->label2->Location = System::Drawing::Point(12, 422);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(35, 13);
 			this->label2->TabIndex = 15;
@@ -596,8 +608,9 @@ namespace CppCLRWinFormsProject {
 			// 
 			// button15
 			// 
-			this->button15->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
-			this->button15->Location = System::Drawing::Point(575, 640);
+			this->button15->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button15->Enabled = false;
+			this->button15->Location = System::Drawing::Point(575, 434);
 			this->button15->Name = L"button15";
 			this->button15->Size = System::Drawing::Size(75, 26);
 			this->button15->TabIndex = 22;
@@ -607,12 +620,12 @@ namespace CppCLRWinFormsProject {
 			// 
 			// label3
 			// 
-			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Right));
+			this->label3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
 			this->label3->AutoSize = true;
 			this->label3->Enabled = false;
 			this->label3->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 8.25F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label3->Location = System::Drawing::Point(149, 628);
+			this->label3->Location = System::Drawing::Point(149, 422);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(49, 13);
 			this->label3->TabIndex = 28;
@@ -622,18 +635,32 @@ namespace CppCLRWinFormsProject {
 			// button16
 			// 
 			this->button16->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->button16->Location = System::Drawing::Point(93, 714);
+			this->button16->Location = System::Drawing::Point(751, 29);
 			this->button16->Name = L"button16";
 			this->button16->Size = System::Drawing::Size(75, 26);
 			this->button16->TabIndex = 36;
 			this->button16->Text = L"Insert";
 			this->button16->UseVisualStyleBackColor = true;
+			this->button16->Click += gcnew System::EventHandler(this, &Form1::button16_Click);
+			// 
+			// button17
+			// 
+			this->button17->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left));
+			this->button17->Enabled = false;
+			this->button17->Location = System::Drawing::Point(668, 434);
+			this->button17->Name = L"button17";
+			this->button17->Size = System::Drawing::Size(75, 26);
+			this->button17->TabIndex = 23;
+			this->button17->Text = L"Confirm";
+			this->button17->UseVisualStyleBackColor = true;
+			this->button17->Click += gcnew System::EventHandler(this, &Form1::button17_Click);
 			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(745, 752);
+			this->ClientSize = System::Drawing::Size(838, 571);
+			this->Controls->Add(this->button17);
 			this->Controls->Add(this->button16);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->button15);
@@ -662,8 +689,9 @@ namespace CppCLRWinFormsProject {
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
-			this->MinimumSize = System::Drawing::Size(761, 585);
+			this->MinimumSize = System::Drawing::Size(854, 549);
 			this->Name = L"Form1";
+			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Savarankiskas darbas Nr.2";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->EndInit();
 			this->groupBox1->ResumeLayout(false);
@@ -700,6 +728,17 @@ namespace CppCLRWinFormsProject {
 		groupBox1->Enabled = true;
 		label1->Enabled = true;
 		richTextBox1->Enabled = true;
+
+		textBox1->Enabled = false;
+		textBox2->Enabled = false;
+		textBox3->Enabled = false;
+		textBox4->Enabled = false;
+		button13->Enabled = false;
+		button14->Enabled = false;
+		button15->Enabled = false;
+		button16->Enabled = true;
+		label1->Enabled = false;
+		label2->Enabled = false;
 	}
 	private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -831,9 +870,19 @@ namespace CppCLRWinFormsProject {
 		button4->Enabled = false;
 		button2->Enabled = false;
 		button6->Enabled = false;
+		button9->Enabled = false;
 		richTextBox1->ReadOnly = true;
 		richTextBox1->Enabled = false;
 		button16->Enabled = true;
+		textBox1->Enabled = false;
+		textBox2->Enabled = false;
+		textBox3->Enabled = false;
+		textBox4->Enabled = false;
+		button13->Enabled = false;
+		button14->Enabled = false;
+		button15->Enabled = false;
+		label1->Enabled = false;
+		label2->Enabled = false;
 	}
 	private: System::Void button7_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -937,6 +986,9 @@ private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ 
 	String^ nd_Temp;
 	nd_Temp = Convert::ToString(textBox4->Text);
 	richTextBox1->Text += ("\t" + nd_Temp);
+	button15->Enabled = true;
+	textBox3->Enabled = true;
+	textBox3->ReadOnly = false;
 
 	MessageBox::Show("ND addadet\nAdd more ND click Add ND button\nAdd Exam click Add Exam button\n",
 		"Info", MessageBoxButtons::OK);
@@ -953,8 +1005,12 @@ private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ 
 	id_suTemp = Convert::ToString(textBox2->Text);
 	richTextBox1->Text += ("\t" + id_suTemp);
 	button14->Enabled = false;
+	button13->Enabled = true;
 	textBox1->ReadOnly = true;
 	textBox2->ReadOnly = true;
+	textBox4->Enabled = true;
+	textBox4->ReadOnly = false;
+
 	
 	
 }
@@ -966,11 +1022,38 @@ private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ 
 	textBox3->ReadOnly = true;
 	button13->Enabled = false;
 	button15->Enabled = false;
+	button17->Enabled = true;
+
+
+}
+private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+	groupBox1->Enabled = false;
+	textBox1->Enabled = true;
+	textBox2->Enabled = true;
+	button14->Enabled = true;
+	button16->Enabled = true;
+	label1->Enabled = true;
+	label2->Enabled = true;
+	textBox1->ReadOnly = false;
+	textBox2->ReadOnly = false;
+}
+private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+	richTextBox1->BackColor = System::Drawing::SystemColors::Control;
+	StreamWriter^ outFile = gcnew StreamWriter("temp.txt");
+	outFile->Write(richTextBox1->Text);
+	outFile->Close();
+	button6->Enabled = true;
+	button8->Enabled = true;
+	button3->Enabled = true;
+	button4->Enabled = true;
+	button1->Enabled = false;
+	richTextBox1->ReadOnly = false;
+	button17->Enabled = false;
+	groupBox1->Enabled = true;
 	textBox1->Clear();
 	textBox2->Clear();
 	textBox3->Clear();
 	textBox4->Clear();
-
 }
 };
 }
