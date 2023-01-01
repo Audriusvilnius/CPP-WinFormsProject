@@ -1,1 +1,3 @@
-# CppCLR_WinFormsProject_OOP_1
+# Iverciu vertinimo programa
+## Programa skirta iverciu nuskaitymui is failo, koregavimui iverciu, nauju iverciu ivedimui. Rezultatu issaugojimui i .txt faila. Skaiciuojamas iverciu vidurkis, medianas, vartotojas nustato pats pagal koki kriteriju bus pateikiami galutiniai skaiciavimai. Galutinius ivercius galima skaiditi i dvi dalis nuo 1 iki 10 pagal vidurki. Programa rusiuoja sarasa pagal Varda studento, pagal vidurki, pagal iverti nuo ir pagal iverti iki (pasirenka vartotojas ir nustato reiksme).
+## Visuose etapuose yra galimybe issaugoti rezultatus bei korekcijas nuskaitytu, koreguotu ir naujai kuriamu sarasu.
