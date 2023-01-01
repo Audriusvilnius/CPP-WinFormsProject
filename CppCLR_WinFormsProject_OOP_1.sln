@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CppCLR_WinFormsProject_OOP_1", "CppCLR_WinFormsProject_OOP_1\CppCLR_WinFormsProject_OOP_1.vcxproj", "{B02B3B2A-5275-483A-932B-DA03696BD44F}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "SD2_Setup", "SD2_Setup\SD2_Setup.vdproj", "{2D7B97C3-0FBD-41FD-B023-91BDA10FD1F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -21,6 +23,10 @@ Global
 		{B02B3B2A-5275-483A-932B-DA03696BD44F}.Release|x64.Build.0 = Release|x64
 		{B02B3B2A-5275-483A-932B-DA03696BD44F}.Release|x86.ActiveCfg = Release|Win32
 		{B02B3B2A-5275-483A-932B-DA03696BD44F}.Release|x86.Build.0 = Release|Win32
+		{2D7B97C3-0FBD-41FD-B023-91BDA10FD1F0}.Debug|x64.ActiveCfg = Debug
+		{2D7B97C3-0FBD-41FD-B023-91BDA10FD1F0}.Debug|x86.ActiveCfg = Debug
+		{2D7B97C3-0FBD-41FD-B023-91BDA10FD1F0}.Release|x64.ActiveCfg = Release
+		{2D7B97C3-0FBD-41FD-B023-91BDA10FD1F0}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

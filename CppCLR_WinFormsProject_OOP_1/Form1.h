@@ -149,9 +149,11 @@ namespace CppCLRWinFormsProject {
 			this->openFileToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->saveToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->saveAsToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
+			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->insertToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->editToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->saveEditToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripSeparator1 = (gcnew System::Windows::Forms::ToolStripSeparator());
+			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			this->closeToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->viewToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
 			this->avrgValueToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
@@ -168,8 +170,6 @@ namespace CppCLRWinFormsProject {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->button16 = (gcnew System::Windows::Forms::Button());
 			this->button17 = (gcnew System::Windows::Forms::Button());
-			this->insertToolStripMenuItem = (gcnew System::Windows::Forms::ToolStripMenuItem());
-			this->toolStripSeparator2 = (gcnew System::Windows::Forms::ToolStripSeparator());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->numericUpDown1))->BeginInit();
 			this->groupBox1->SuspendLayout();
 			this->menuStrip1->SuspendLayout();
@@ -420,6 +420,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->groupBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>(((System::Windows::Forms::AnchorStyles::Bottom | System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
+			this->groupBox1->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->groupBox1->BackgroundImageLayout = System::Windows::Forms::ImageLayout::Center;
 			this->groupBox1->Controls->Add(this->radioButton1);
 			this->groupBox1->Controls->Add(this->radioButton3);
@@ -480,6 +481,18 @@ namespace CppCLRWinFormsProject {
 			this->saveAsToolStripMenuItem->Text = L"Save as";
 			this->saveAsToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button4_Click);
 			// 
+			// toolStripSeparator1
+			// 
+			this->toolStripSeparator1->Name = L"toolStripSeparator1";
+			this->toolStripSeparator1->Size = System::Drawing::Size(119, 6);
+			// 
+			// insertToolStripMenuItem
+			// 
+			this->insertToolStripMenuItem->Name = L"insertToolStripMenuItem";
+			this->insertToolStripMenuItem->Size = System::Drawing::Size(122, 22);
+			this->insertToolStripMenuItem->Text = L"Insert";
+			this->insertToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button16_Click);
+			// 
 			// editToolStripMenuItem
 			// 
 			this->editToolStripMenuItem->Name = L"editToolStripMenuItem";
@@ -494,10 +507,10 @@ namespace CppCLRWinFormsProject {
 			this->saveEditToolStripMenuItem->Text = L"Save Edit";
 			this->saveEditToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button9_Click);
 			// 
-			// toolStripSeparator1
+			// toolStripSeparator2
 			// 
-			this->toolStripSeparator1->Name = L"toolStripSeparator1";
-			this->toolStripSeparator1->Size = System::Drawing::Size(119, 6);
+			this->toolStripSeparator2->Name = L"toolStripSeparator2";
+			this->toolStripSeparator2->Size = System::Drawing::Size(119, 6);
 			// 
 			// closeToolStripMenuItem
 			// 
@@ -659,18 +672,6 @@ namespace CppCLRWinFormsProject {
 			this->button17->UseVisualStyleBackColor = true;
 			this->button17->Click += gcnew System::EventHandler(this, &Form1::button17_Click);
 			// 
-			// insertToolStripMenuItem
-			// 
-			this->insertToolStripMenuItem->Name = L"insertToolStripMenuItem";
-			this->insertToolStripMenuItem->Size = System::Drawing::Size(180, 22);
-			this->insertToolStripMenuItem->Text = L"Insert";
-			this->insertToolStripMenuItem->Click += gcnew System::EventHandler(this, &Form1::button16_Click);
-			// 
-			// toolStripSeparator2
-			// 
-			this->toolStripSeparator2->Name = L"toolStripSeparator2";
-			this->toolStripSeparator2->Size = System::Drawing::Size(177, 6);
-			// 
 			// Form1
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
@@ -733,7 +734,6 @@ namespace CppCLRWinFormsProject {
 			sr->Close();
 		}
 		StreamWriter^ outFile = gcnew StreamWriter("temp.txt");
-
 		outFile->Write(richTextBox1->Text);
 		outFile->Close();
 		button2->Enabled = true;
@@ -744,7 +744,6 @@ namespace CppCLRWinFormsProject {
 		groupBox1->Enabled = true;
 		label1->Enabled = true;
 		richTextBox1->Enabled = true;
-
 		textBox1->Enabled = false;
 		textBox2->Enabled = false;
 		textBox3->Enabled = false;
@@ -812,8 +811,6 @@ namespace CppCLRWinFormsProject {
 		button16->Enabled = false;
 		label1->Enabled = true;
 		label2->Enabled = false;
-
-
 	}
 	private: System::Void button3_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -947,8 +944,8 @@ namespace CppCLRWinFormsProject {
 			outlessvf.close();
 			V_dataLess.clear();
 		}
-			richTextBox1->Text = File::ReadAllText("temp_pr.txt");
-			system("del temp_pr.txt");
+		richTextBox1->Text = File::ReadAllText("temp_pr.txt");
+		system("del temp_pr.txt");
 	}
 	private: System::Void numericUpDown1_ValueChanged(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -969,8 +966,8 @@ namespace CppCLRWinFormsProject {
 			outupvf.close();
 			V_dataUp.clear();
 		}
-			richTextBox1->Text = File::ReadAllText("temp_pr.txt");
-			system("del temp_pr.txt");
+		richTextBox1->Text = File::ReadAllText("temp_pr.txt");
+		system("del temp_pr.txt");
 	}
 	private: System::Void radioButton1_CheckedChanged(System::Object^ sender, System::EventArgs^ e) {
 		option = 3;
@@ -983,89 +980,79 @@ namespace CppCLRWinFormsProject {
 	}
 	private: System::Void menuStrip1_ItemClicked(System::Object^ sender, System::Windows::Forms::ToolStripItemClickedEventArgs^ e) {
 	}
-private: System::Void vievToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	MessageBox::Show("Vilniaus Verslo Kolegija\nSavarankiskas darbas Nr.2\nDarba atliko: Audrius Ivko\nGrupe: PIT-21-I-NT",
-		"About", MessageBoxButtons::OK);
-}
-private: System::Void openFileToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
-	option = 5;
-}
-private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-
-
-}
-private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ nd_Temp;
-	nd_Temp = Convert::ToString(textBox4->Text);
-	richTextBox1->Text += ("\t" + nd_Temp);
-	button15->Enabled = true;
-	textBox3->Enabled = true;
-	textBox3->ReadOnly = false;
-
-	MessageBox::Show("ND addadet\nAdd more ND click Add ND button\nAdd Exam click Add Exam button\n",
-		"Info", MessageBoxButtons::OK);
-}
-private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
-
-
-}
-private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ id_naTemp;
-	id_naTemp = Convert::ToString(textBox1->Text);
-	richTextBox1->Text += ("\n" + id_naTemp);
-	String^ id_suTemp;
-	id_suTemp = Convert::ToString(textBox2->Text);
-	richTextBox1->Text += ("\t" + id_suTemp);
-	button14->Enabled = false;
-	button13->Enabled = true;
-	textBox1->ReadOnly = true;
-	textBox2->ReadOnly = true;
-	textBox4->Enabled = true;
-	textBox4->ReadOnly = false;
-
-	
-	
-}
-private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
-	String^ ex_Temp;
-	ex_Temp = Convert::ToString(textBox3->Text);
-	richTextBox1->Text += ("\t" + ex_Temp);
-	textBox4->ReadOnly = true;
-	textBox3->ReadOnly = true;
-	button13->Enabled = false;
-	button15->Enabled = false;
-	button17->Enabled = true;
-
-
-}
-private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
-	groupBox1->Enabled = false;
-	textBox1->Enabled = true;
-	textBox2->Enabled = true;
-	button14->Enabled = true;
-	button16->Enabled = true;
-	label1->Enabled = true;
-	label2->Enabled = true;
-	textBox1->ReadOnly = false;
-	textBox2->ReadOnly = false;
-}
-private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
-	richTextBox1->BackColor = System::Drawing::SystemColors::Control;
-	StreamWriter^ outFile = gcnew StreamWriter("temp.txt");
-	outFile->Write(richTextBox1->Text);
-	outFile->Close();
-	button6->Enabled = true;
-	button8->Enabled = true;
-	button3->Enabled = true;
-	button4->Enabled = true;
-	button1->Enabled = false;
-	richTextBox1->ReadOnly = false;
-	button17->Enabled = false;
-	groupBox1->Enabled = true;
-	textBox1->Clear();
-	textBox2->Clear();
-	textBox3->Clear();
-	textBox4->Clear();
-}
-};
+	private: System::Void vievToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		MessageBox::Show("Vilniaus Verslo Kolegija\nSavarankiskas darbas Nr.2\nDarba atliko: Audrius Ivko\nGrupe: PIT-21-I-NT",
+			"About", MessageBoxButtons::OK);
+	}
+	private: System::Void openFileToolStripMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
+		option = 5;
+	}
+	private: System::Void textBox3_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button13_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ nd_Temp;
+		nd_Temp = Convert::ToString(textBox4->Text);
+		richTextBox1->Text += ("\t" + nd_Temp);
+		button15->Enabled = true;
+		textBox3->Enabled = true;
+		textBox3->ReadOnly = false;
+		MessageBox::Show("ND addadet\nAdd more ND click Add ND button\nAdd Exam click Add Exam button\n",
+			"Info", MessageBoxButtons::OK);
+	}
+	private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void button14_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ id_naTemp;
+		id_naTemp = Convert::ToString(textBox1->Text);
+		richTextBox1->Text += ("\n" + id_naTemp);
+		String^ id_suTemp;
+		id_suTemp = Convert::ToString(textBox2->Text);
+		richTextBox1->Text += ("\t" + id_suTemp);
+		button14->Enabled = false;
+		button13->Enabled = true;
+		textBox1->ReadOnly = true;
+		textBox2->ReadOnly = true;
+		textBox4->Enabled = true;
+		textBox4->ReadOnly = false;
+	}
+	private: System::Void button15_Click(System::Object^ sender, System::EventArgs^ e) {
+		String^ ex_Temp;
+		ex_Temp = Convert::ToString(textBox3->Text);
+		richTextBox1->Text += ("\t" + ex_Temp);
+		textBox4->ReadOnly = true;
+		textBox3->ReadOnly = true;
+		button13->Enabled = false;
+		button15->Enabled = false;
+		button17->Enabled = true;
+	}
+	private: System::Void button16_Click(System::Object^ sender, System::EventArgs^ e) {
+		groupBox1->Enabled = false;
+		textBox1->Enabled = true;
+		textBox2->Enabled = true;
+		button14->Enabled = true;
+		button16->Enabled = true;
+		label1->Enabled = true;
+		label2->Enabled = true;
+		textBox1->ReadOnly = false;
+		textBox2->ReadOnly = false;
+	}
+	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
+		richTextBox1->BackColor = System::Drawing::SystemColors::Control;
+		StreamWriter^ outFile = gcnew StreamWriter("temp.txt");
+		outFile->Write(richTextBox1->Text);
+		outFile->Close();
+		button6->Enabled = true;
+		button8->Enabled = true;
+		button3->Enabled = true;
+		button4->Enabled = true;
+		button1->Enabled = false;
+		richTextBox1->ReadOnly = false;
+		button17->Enabled = false;
+		groupBox1->Enabled = true;
+		textBox1->Clear();
+		textBox2->Clear();
+		textBox3->Clear();
+		textBox4->Clear();
+	}
+	};
 }
