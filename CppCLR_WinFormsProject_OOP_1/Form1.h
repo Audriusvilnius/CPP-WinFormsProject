@@ -185,7 +185,7 @@ namespace CppCLRWinFormsProject {
 			this->richTextBox1->Location = System::Drawing::Point(12, 29);
 			this->richTextBox1->Name = L"richTextBox1";
 			this->richTextBox1->ReadOnly = true;
-			this->richTextBox1->Size = System::Drawing::Size(733, 299);
+			this->richTextBox1->Size = System::Drawing::Size(733, 337);
 			this->richTextBox1->TabIndex = 0;
 			this->richTextBox1->Text = L"";
 			// 
@@ -207,13 +207,13 @@ namespace CppCLRWinFormsProject {
 			// button2
 			// 
 			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
-			this->button2->Location = System::Drawing::Point(753, 372);
+			this->button2->Enabled = false;
+			this->button2->Location = System::Drawing::Point(751, 125);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(75, 26);
 			this->button2->TabIndex = 21;
 			this->button2->Text = L"Calculate";
 			this->button2->UseVisualStyleBackColor = true;
-			this->button2->Visible = false;
 			this->button2->Click += gcnew System::EventHandler(this, &Form1::button2_Click);
 			// 
 			// button3
@@ -315,7 +315,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->button11->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button11->Enabled = false;
-			this->button11->Location = System::Drawing::Point(753, 225);
+			this->button11->Location = System::Drawing::Point(751, 230);
 			this->button11->Name = L"button11";
 			this->button11->Size = System::Drawing::Size(75, 26);
 			this->button11->TabIndex = 17;
@@ -327,7 +327,7 @@ namespace CppCLRWinFormsProject {
 			// 
 			this->numericUpDown1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->numericUpDown1->Enabled = false;
-			this->numericUpDown1->Location = System::Drawing::Point(753, 199);
+			this->numericUpDown1->Location = System::Drawing::Point(751, 204);
 			this->numericUpDown1->Maximum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 10, 0, 0, 0 });
 			this->numericUpDown1->Minimum = System::Decimal(gcnew cli::array< System::Int32 >(4) { 1, 0, 0, 0 });
 			this->numericUpDown1->Name = L"numericUpDown1";
@@ -352,12 +352,13 @@ namespace CppCLRWinFormsProject {
 			this->label1->TabIndex = 26;
 			this->label1->Text = L"Select data value calculltion format";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label1->Visible = false;
 			// 
 			// button12
 			// 
 			this->button12->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Right));
 			this->button12->Enabled = false;
-			this->button12->Location = System::Drawing::Point(753, 167);
+			this->button12->Location = System::Drawing::Point(751, 172);
 			this->button12->Name = L"button12";
 			this->button12->Size = System::Drawing::Size(75, 26);
 			this->button12->TabIndex = 15;
@@ -706,7 +707,7 @@ namespace CppCLRWinFormsProject {
 			this->Controls->Add(this->richTextBox1);
 			this->Controls->Add(this->menuStrip1);
 			this->MainMenuStrip = this->menuStrip1;
-			this->MinimumSize = System::Drawing::Size(854, 549);
+			this->MinimumSize = System::Drawing::Size(854, 610);
 			this->Name = L"Form1";
 			this->StartPosition = System::Windows::Forms::FormStartPosition::CenterScreen;
 			this->Text = L"Savarankiskas darbas Nr.2";
@@ -733,7 +734,7 @@ namespace CppCLRWinFormsProject {
 			failo_vardas = openFileDialog1->FileName;
 			sr->Close();
 		}
-		StreamWriter^ outFile = gcnew StreamWriter("temp.txt");
+		StreamWriter^ outFile = gcnew StreamWriter("temp.txt",true);
 		outFile->Write(richTextBox1->Text);
 		outFile->Close();
 		button2->Enabled = true;
@@ -867,6 +868,7 @@ namespace CppCLRWinFormsProject {
 		dataV.clear();
 		groupBox1->Enabled = false;
 		button5->Enabled = false;
+		button2->Enabled = false;
 		button1->Enabled = true;
 		button10->Enabled = false;
 		button11->Enabled = false;
@@ -901,9 +903,11 @@ namespace CppCLRWinFormsProject {
 	private: System::Void button8_Click(System::Object^ sender, System::EventArgs^ e)
 	{
 		richTextBox1->BackColor = System::Drawing::SystemColors::Window;
-		this->richTextBox1->ReadOnly = false;
+		richTextBox1->ReadOnly = false;
 		button9->Enabled = true;
 		button8->Enabled = false;
+		button2->Enabled = false;
+		
 	}
 	private: System::Void button9_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -911,7 +915,8 @@ namespace CppCLRWinFormsProject {
 		StreamWriter^ outFile = gcnew StreamWriter("temp.txt");
 		outFile->Write(richTextBox1->Text);
 		outFile->Close();
-		this->richTextBox1->ReadOnly = true;
+		richTextBox1->ReadOnly = true;
+		button2->Enabled = true;
 	}
 	private: System::Void button10_Click(System::Object^ sender, System::EventArgs^ e)
 	{
@@ -1035,6 +1040,7 @@ namespace CppCLRWinFormsProject {
 		label2->Enabled = true;
 		textBox1->ReadOnly = false;
 		textBox2->ReadOnly = false;
+		button2->Enabled = false;
 	}
 	private: System::Void button17_Click(System::Object^ sender, System::EventArgs^ e) {
 		richTextBox1->BackColor = System::Drawing::SystemColors::Control;
@@ -1042,6 +1048,7 @@ namespace CppCLRWinFormsProject {
 		outFile->Write(richTextBox1->Text);
 		outFile->Close();
 		button6->Enabled = true;
+		button2->Enabled = true;
 		button8->Enabled = true;
 		button3->Enabled = true;
 		button4->Enabled = true;

@@ -68,26 +68,7 @@ ostream& operator<<(ostream& output, const student& set_data) {
 };
 
 
-void prtintrez()
-{
-	cout << "" << setw(5) << "Vardas" << setw(10) << "" << setw(4) << "Pavarde"
-		<< setw(15) << "" << setw(10) << "Galutinis (Vid.)" << " / " << "Galutinis (Med.)" << endl;
-	cout << "--------------------------------------------------------------------------" << endl;
 
-};
-
-void prtint_Less()
-{
-	cout << "\n\n" << setw(5) << "Vardas" << setw(10) << "" << setw(4) << "Pavarde"
-		<< setw(15) << "" << setw(10) << "Galutinis (Vid. < 5)" << endl;
-	cout << "--------------------------------------------------------------------------" << endl;
-};
-void prtint_Up()
-{
-	cout << "\n\n" << setw(5) << "Vardas" << setw(10) << "" << setw(4) << "Pavarde"
-		<< setw(15) << "" << setw(10) << "Galutinis (Vid. >= 5)" << endl;
-	cout << "--------------------------------------------------------------------------" << endl;
-};
 
 
 float checknd(float nd)

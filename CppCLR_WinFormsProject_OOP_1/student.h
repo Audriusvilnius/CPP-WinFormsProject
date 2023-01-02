@@ -44,9 +44,7 @@ public:
 	~student() {};
 };
 
-void prtintrez();
-void prtint_Up();
-void prtint_Less();
+;
 float checknd(float nd);
 float checkex(float ex);
 bool surname(const student& x, const student& y);
